@@ -3,8 +3,7 @@
 
 
 Assignment 1 (C++ Programming)  
-Yoshiko Murakami (X00503764)  
-Linn-Benton Community College  
+Yoshiko Murakami    
 CS260  
 April 12, 2021  
 

@@ -1,0 +1,120 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#define maxmumSize 1000000000
+
+using namespace std;
+
+enum Color{
+    Blue, Black   
+};
+struct Mb // marble is initialized as Mb.
+{
+    double Wt;
+    double d; //Diameter is initialized as d
+    Color color;
+};
+
+class Bag
+{
+    private:
+        
+        Mb * mbArr;
+        
+        long long mbCount;
+        
+        long long arrCapacity;
+    public:
+        //function declaration.
+        Bag();
+        void add(Mb mb);
+        Mb remove();
+
+};
+
+Bag::Bag()
+{
+    //This can be altered to increase array size, and 3 is only for demonstration.
+    arrCapacity = 3;
+    // allot space for a thousand elements. 
+    mbArr = new Mb[arrCapacity];
+    // marblecount initialized as zero
+    mbCount = 0;
+
+}
+void Bag::add(Mb mb)
+{
+    // Determine if resizing array is necessary 
+    if(mbCount>= arrCapacity)
+    {
+        cout<<"Marble bag is filled up, increasing marble size bag."<<endl;
+        arrCapacity += arrCapacity;
+        // Determine if the cpacity exceed maximum size 
+        if(arrCapacity > maxmumSize)
+        {
+            //initialize the capacity of the array as maximum size 
+            arrCapacity = maxmumSize;
+        }
+        //temporay array for storing the marbles
+        Mb * tempArr = new Mb[arrCapacity];
+        for(int i = 0; i < mbCount; i++)
+        {
+            tempArr[i] = mbArr[i];
+        }
+        delete [] mbArr;
+        mbArr = tempArr;
+    }
+    cout<<"Adding marble to bag."<<endl;
+    // insert marble
+    mbArr[mbCount] = mb;
+    // increment marblecounter
+    mbCount++;
+}
+Mb Bag::remove()
+{
+    //random number neneration (between zero and mbcount)
+    long long idx = rand() % (mbCount + 1);
+    // marble returned as idx, which implies the index
+    return mbArr[idx];
+}
+
+int main()
+{
+    //random number generator
+    srand(time(NULL));
+    // create a bag instance
+    Bag Bag;
+    // create for elements
+    Mb c1,c2,c3,c4,c5;
+    c1.Wt = 10.5;
+    c1.color = Blue;
+    c1.d = 1.55;
+    c2.Wt = 12.5;
+    c2.color = Black;
+    c2.d = 0.60;
+    c3.Wt = 10.5;
+    c3.color = Blue;
+    c3.d = 0.75;
+    c4.Wt = 8.5;
+    c4.color = Black;
+    c4.d = 0.35;
+    c5.Wt = 6.34;
+    c5.color = Blue;
+    c5.d = 0.235;
+
+    //Insert marbles
+    Bag.add(c1);
+    Bag.add(c2);
+    Bag.add(c3);
+    Bag.add(c4);
+    Bag.add(c5);
+    // remove marble randomly
+    Mb c = Bag.remove();
+    cout<<"Weight   : "<<c.Wt<<endl;
+    cout<<"Diameter : "<<c.d<<endl;
+    cout<<"Color     : ";
+    if(c.color == Blue)
+        cout<<"BLUE";
+    else
+        cout<<"BLACK";
+}

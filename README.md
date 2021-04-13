@@ -22,9 +22,13 @@ April 12, 2021
     4.	a few ways that we could use to show that our implementation should be working correctly (tests),  
         (perhaps you start with an empty bag, put a marble in with some known values, then you pull the marble out and verify that it has the same values, perhaps you try to pull a marble out of an empty bag, perhaps you try to add 3 billion marbles... maybe you do not have to go that high or maybe your solution is smart enough to deal with this)  
 3.	implement your bag of marbles in a program as simply as possible!
-4.	test our implementation in a driver file with our tests (a driver file is just the file we would use to launchour program). 
-Note: This assignment is intended to get you thinking about how simple your implementations could be, to make sure your programming environment is set up properly, and to get you thinking about how we store data in different structures.
-5.      Submit a link to your repo to Moodle as a reminder to us to grade your work  
+4.	Test our implementation in a driver file with our tests (a driver file is just the file we would use to launchour program)　　Note: This assignment is intended to get you thinking about how simple your implementations could be, to make sure your programming environment is set up properly, and to get you thinking about how we store data in different structures.
+5.	Submit a link to your repo to Moodle as a reminder to us to grade your work  
+
+
+
+
+  
 
 
 
@@ -44,8 +48,8 @@ At this moment, the marble bag contains up to 1000000000 elements. The number of
  
 
 ## References  
-Savitch, W. J., Mock, K., Msanjila, S., & Muiche, L. (2015). Problem Solving with C++ Pearson.  
-Study Tonight (2021). Introduction to C++ Classes and Objects. https://www.studytonight.com/cpp/class-and-objects.php  
-Toso, R. F., & Resende, M. G. (2015). A C++ application programming interface for biased random-key genetic algorithms. Optimization Methods and Software, 30(1), 81-93  
+-Savitch, W. J., Mock, K., Msanjila, S., & Muiche, L. (2015). *Problem Solving with C++.* Pearson.  
+-*Study Tonight* (2021). Introduction to C++ Classes and Objects. https://www.studytonight.com/cpp/class-and-objects.php  
+-Toso, R. F., & Resende, M. G. (2015). A C++ application programming interface for biased random-key genetic algorithms. *Optimization Methods and Software, 30(1)*, 81-93  
 
 

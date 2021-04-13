@@ -1,5 +1,5 @@
 # CS260-Assignment-1
-C++ Programming 
+
 
 
 Assignment 1 (C++ Programming)  
@@ -44,11 +44,8 @@ At this moment, the marble bag contains up to 1000000000 elements. The number of
  
 
 ## References  
-Savitch, W. J., Mock, K., Msanjila, S., & Muiche, L. (2015). Problem Solving with C++  
-	Pearson.  
-Study Tonight (2021). Introduction to C++ Classes and Objects   
-	https://www.studytonight.com/cpp/class-and-objects.php  
-Toso, R. F., & Resende, M. G. (2015). A C++ application programming interface for biased  
-	random-key genetic algorithms. Optimization Methods and Software, 30(1), 81-93  
+Savitch, W. J., Mock, K., Msanjila, S., & Muiche, L. (2015). Problem Solving with C++ Pearson.  
+Study Tonight (2021). Introduction to C++ Classes and Objects. https://www.studytonight.com/cpp/class-and-objects.php  
+Toso, R. F., & Resende, M. G. (2015). A C++ application programming interface for biased random-key genetic algorithms. Optimization Methods and Software, 30(1), 81-93  
 
 
